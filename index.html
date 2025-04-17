@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <img src="Logo_img.png" alt="graudation cap" class="header-img">
+        <h1 class="heaadingh1">Student Registration Details </h1>
+        <p class="headingp">Submit the form below to register</p>
+    </header>
+    <a href="#form-output" class="tablelink">Registered Students</a>
+    <main class="main-container">
+        <form action="" class="form">
+            <div class="labelinput">
+                <label for="name" class="label">Student Name:</label><br>
+                <input type="text" id="name" name="name" class="input-field" required>   
+            </div>
+            
+            <div class="labelinput">
+               <label for="id" class="label">Student ID:</label><br>
+               <input type="number" id="id" name="Student_id" class="input-field" required>
+            </div>
+
+            <div class="labelinput">
+              <label for="email" class="label">Email ID:</label><br>
+              <input type="email" id="email" name="email" class="input-field" required>
+           </div>
+
+            <div class="labelinput">
+              <label for="phone" class="label">Contact No. :</label><br>
+              <input type="tel" id="phone" name="phone" class="input-field" required>
+            </div>
+
+            <div class="labelinput">
+              <label for="dob" class="label">Date of Birth:</label><br>
+              <input type="date" id="dob" name="dob" class="input-field" required><br><br> 
+            </div>
+
+            <button type="submit" class="register">Register</button>
+        </form>
+        <div class="form-output" id="form-output">
+            <table id="student-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>DOB</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body">
+                  <!-- Rows will be inserted dynamically -->
+                </tbody>
+              </table>
+        </div>
+    </main>
+
+</body>
+</html>
